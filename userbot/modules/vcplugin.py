@@ -57,7 +57,7 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-@ultroid_cmd(
+@Nfy-UserBot_cmd(
     pattern="stopvc$",
     admins_only=True,
     groups_only=True,
@@ -71,7 +71,7 @@ async def _(e):
         await eor(e, f"`{str(ex)}`")
 
 
-@ultroid_cmd(
+@Nfy-UserBot_cmd(
     pattern="playvc$",
 )
 async def _(e):
@@ -84,7 +84,7 @@ async def _(e):
         await zz.edit(f"Failed {er}\n\n{out}")
 
 
-@ultroid_cmd(
+@Nfy-UserBot_cmd(
     pattern="vcinvite$",
     groups_only=True,
 )
@@ -105,7 +105,7 @@ async def _(e):
     await ok.edit(f"`Invited {z} users`")
 
 
-@ultroid_cmd(
+@Nfy-UserBot_cmd(
     pattern="startvc$",
     admins_only=True,
     groups_only=True,
@@ -118,7 +118,7 @@ async def _(e):
         await eor(e, f"`{str(ex)}`")
 
 
-@ultroid_cmd(
+@Nfy-Userbot_cmd(
     pattern="listvcaccess$",
 )
 async def _(e):
@@ -135,7 +135,7 @@ async def _(e):
     await xx.edit(pp)
 
 
-@ultroid_cmd(
+@Nfy-UserBot_cmd(
     pattern="rmvcaccess ?(.*)",
 )
 async def _(e):
@@ -169,7 +169,7 @@ async def _(e):
         return await eod(xx, f"`{str(ex)}`", time=5)
 
 
-@ultroid_cmd(
+@Nfy-Userbot_cmd(
     pattern="vcaccess ?(.*)",
 )
 async def _(e):
