@@ -47,7 +47,7 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-@Ultroid_cmd(
+(
     pattern="stopvc$",
     admins_only=True,
     groups_only=True,
@@ -61,7 +61,7 @@ async def _(e):
         await eor(e, f"`{str(ex)}`")
 
 
-@Ultroidmd(
+(
     pattern="playvc$",
 )
 async def _(e):
@@ -74,7 +74,7 @@ async def _(e):
         await zz.edit(f"Failed {er}\n\n{out}")
 
 
-@Ultroid_cmd(
+(
     pattern="vcinvite$",
     groups_only=True,
 )
@@ -95,7 +95,7 @@ async def _(e):
     await ok.edit(f"`Invited {z} users`")
 
 
-@Ultroid_cmd(
+(
     pattern="startvc$",
     admins_only=True,
     groups_only=True,
@@ -108,7 +108,7 @@ async def _(e):
         await eor(e, f"`{str(ex)}`")
 
 
-@Ultroid_cmd(
+(
     pattern="listvcaccess$",
 )
 async def _(e):
@@ -125,7 +125,7 @@ async def _(e):
     await xx.edit(pp)
 
 
-@Ultroid_cmd(
+(
     pattern="rmvcaccess ?(.*)",
 )
 async def _(e):
@@ -159,7 +159,7 @@ async def _(e):
         return await eod(xx, f"`{str(ex)}`", time=5)
 
 
-@Ultroid_cmd(
+(
     pattern="vcaccess ?(.*)",
 )
 async def _(e):
@@ -193,7 +193,7 @@ async def _(e):
         return await eod(xx, f"`{str(ex)}`", time=5)
 
 
-@asst_cmd("exitVc")
+("exitVc")
 async def evc(e):
     if e.sender.id == ultroid_bot.uid:
         vcdyno("off")
